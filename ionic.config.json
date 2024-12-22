@@ -1,0 +1,7 @@
+{
+  "name": "TurkTelekomMobileAppClone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

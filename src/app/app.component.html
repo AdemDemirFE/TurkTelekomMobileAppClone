@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <ion-label>
+          <h2 style="color: white;">TurkTelekomMobileAppClone</h2>
+          <p style="color: white;">For u test</p>
+        </ion-label>
+      </div>
+      
+      <ion-list>
+        <ion-menu-toggle autoHide="false" *ngFor="let item of translatedMenuItems">
+          <ion-item 
+            (click)="goToPage(item.url)" 
+            style="font-family: Arial, Helvetica, sans-serif; color: black;">
+            <ion-icon slot="start" [name]="item.icon"></ion-icon>
+            {{ item.name | translate  }}
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-item 
+          (click)="logout()" 
+          style="font-family: Arial, Helvetica, sans-serif; color: red;">
+          <ion-icon slot="start" name="log-out"></ion-icon>
+          {{ 'LOGOUT' | translate }}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

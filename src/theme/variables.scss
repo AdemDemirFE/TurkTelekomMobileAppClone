@@ -7,7 +7,7 @@
 
 
     /** primary **/
-    --ion-color-primary: #2A4173;
+    --ion-color-primary: #06386b;
     --ion-color-primary-rgb: 56, 128, 255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -511,49 +511,6 @@ $alert-min-width: 80% !default;
         max-width: 100%;
         min-width: 100%;
         width: 100%;
-        text-align: end;
-    }
-}
-
-.ion-color-selectInputGolden {
-    padding: 2px;
-    text-align: left;
-    --border-radius: 10px;
-    --inner-border-width: 0px;
-    --ion-color-base: var(--ion-color-selectInputGolden);
-    --ion-color-base-rgb: var(--ion-color-selectInputGolden-rgb);
-    --ion-color-contrast: var(--ion-text-color);
-    --ion-color-contrast-rgb: var(--ion-color-selectInputGolden-contrast-rgb);
-    --ion-color-shade: var(ion-color-selectInputGolden-shade);
-    --border-width: 1px;
-    border-color: var(--ion-color-selectInputGolden-contrast);
-
-    .custom-options {
-        max-width: 100%;
-        min-width: 100%;
-        width: 100%;
-        text-align: end;
-    }
-}
-
-
-.ion-color-datetimeInput {
-    padding: 2px;
-    text-align: end;
-    --border-radius: 10px;
-    --inner-border-width: 0px;
-    --ion-color-base: var(--ion-color-selectInput);
-    --ion-color-base-rgb: var(--ion-color-selectInput-rgb);
-    --ion-color-contrast: var(--ion-text-color);
-    --ion-color-contrast-rgb: var(--ion-color-selectInput-contrast-rgb);
-    --ion-color-shade: var(ion-color-selectInput-shade);
-    --border-style: solid;
-    --border-width: 1px;
-
-    .mydate-picker {
-        --color: initial;
-        color: var(--color);
-        background-color: transparent;
         text-align: end;
     }
 }

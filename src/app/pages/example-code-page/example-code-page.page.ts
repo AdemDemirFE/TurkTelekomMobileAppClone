@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-example-code-page',
+  templateUrl: './example-code-page.page.html',
+  styleUrls: ['./example-code-page.page.scss'],
 })
-export class LoginPage implements OnInit {
-
+export class ExampleCodePagePage implements OnInit {
   activeCard: number | null = null;
 
   cards = [
@@ -18,15 +17,15 @@ export class LoginPage implements OnInit {
   history = [
     {
       description: 'Aldığımız Ödüller',
-      image: 'assets/img/turk.png',
+      image: 'assets/imgs/awards-icon.png',
     },
     {
       description: 'iPhone 16 Kazan',
-      image: 'assets/img/english.png',
+      image: 'assets/imgs/iphone-icon.png',
     },
     {
       description: 'Muud Look',
-      image: 'assets/img/arabia.png',
+      image: 'assets/imgs/muud-icon.png',
     },
     {
       description: 'Fırsatı Kaçırma',

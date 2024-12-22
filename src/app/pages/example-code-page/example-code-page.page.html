@@ -38,13 +38,11 @@
   <div class="history-container">
     <div *ngFor="let historyItem of history" class="history-item">
       <div class="history-avatar">
-        <img [src]="historyItem.image" />
+        <img [src]="historyItem.image" alt="History Image" />
       </div>
       <h3 class="history-description">{{ historyItem.description }}</h3>
     </div>
   </div>
-
-  
 </ion-content>
 
 

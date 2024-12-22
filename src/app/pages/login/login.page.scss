@@ -68,10 +68,12 @@ ion-card-title {
   font-weight: bold;
 }
 
+
+
+
 .history-container {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 10px;
 }
@@ -81,34 +83,71 @@ ion-card-title {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   width: 100px;
   flex-shrink: 0;
 }
 
-.history-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  border: 2px solid #129792;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 .history-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #66cdaa;
 }
 
 .history-description {
-  margin-top: 8px;
   font-size: 0.9em;
+  margin-top: 8px;
   color: #06386b;
-  text-align: center;
 }
+
+/* Modal Styles */
+.story-modal {
+  position: relative;
+  height: 100%;
+  background: black;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+.story-image {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.story-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.progress {
+  height: 100%;
+  background: white;
+  transition: width 9s linear;
+}
+
+
+
+
 
 .transparent-footer {
   height: 70px;
